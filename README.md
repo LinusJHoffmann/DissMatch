@@ -15,15 +15,14 @@ This Python script matches students to supervisors based on their preferences fo
 
 1. Data collection:
      - Establish a fixed list of research areas that your department can supervise (e.g. Constitutional Law, Competition Law, Human Rights Law, etc). Make sure the list is neither too granular, nor too coarse. 
-     - Send a form to supervisors, asking them to rank their 5 preferred supervision areas. Using Microsoft Forms is efficient here, because it can directly an excel file.
-     - Send a form to students, asking them to rank their 3 preferred supervision areas.Using Microsoft Forms is efficient here, because it can directly an excel file.
-     - Collate all the data into the file "dissmatch_data.xlsx" - make sure you insert the data in the correct sheets and columns. 
+     - Send a form to supervisors, asking them to rank their 5 preferred supervision areas. Using Microsoft Forms is efficient here, because it can directly output an excel file.
+     - Send a form to students, asking them to rank their 3 preferred supervision areas. Using Microsoft Forms is efficient here, because it can directly output an excel file.
  
-2. Data input:  
-   - All the data is read from and written to an Excel file (`dissmatch_data.xlsx`)
-   - Place your input Excel file in the same directory as the script and name it `dissmatch_data.xlsx` (or change the filename in the script). 
+2. Data preparation: 
+   - Collate all the data on student and supervisor preferences into the Excel file "dissmatch_data.xlsx" - make sure you insert the data in the correct sheets and columns. All the data is read from and written to this file. You can download the file from this repository.
+   - Place your Excel file in the same directory as the script (or change the filename in the script). 
    - Adjust the column and sheet names in your Excel file to match those expected by the script (see comments in the code). If you're unsure, don't change the names of the columns and the sheets! The files in this repository already contain matching column names.
-   - Content of the Excel file:
+   - Content of the `dissmatch_data.xlsx` Excel file:
      - Sheet 1: Supervisors (with columns for name, workload, and area preferences)
      - Sheet 2: Students (with columns for name and area preferences)
      - Sheet 3: Matches (this sheet is empty and will be automatically filled with the optimal matches)
@@ -32,11 +31,11 @@ This Python script matches students to supervisors based on their preferences fo
    - Run the code.
      - It cleans and normalises area names to ensure accurate matching.
      - It builds a linear programming model to maximize satisfaction scores based on preferences and constraints.
-     - It solves the assignment problem using the PuLP library.
+     - It solves the assignment problem using the PuLP library = it finds all the matches that maximise the aggregate satisfaction = the highest possible choices will be matched.  
 
 4. Output:  
    - The code prints assignments and statistics to the console.
-   - It writes the final matches (with student choice ranking) to a new sheet called `matches` in the Excel file.
+   - It also writes the final matches (with student choice ranking) to a new sheet called `matches` in the Excel file.
 
 **Requirements**
 
@@ -45,6 +44,7 @@ You need to install these to use DissMatch:
 - Python 3.x
 - pandas
 - PuLP
+- openpyxl
 
 **Notes**
 
