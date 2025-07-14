@@ -19,9 +19,9 @@ This Python script matches students to supervisors based on their preferences fo
      - Send a form to students, asking them to rank their 3 preferred supervision areas. Using Microsoft Forms is efficient here, because it can directly output an excel file.
  
 2. Data preparation: 
-   - Collate all the data on student and supervisor preferences into the Excel file "dissmatch_data.xlsx" - make sure you insert the data in the correct sheets and columns. All the data is read from and written to this file. You can download the file from this repository.
+   - Collate all the data on student and supervisor preferences into the Excel file "dissmatch_data.xlsx" - make sure you insert the data in the correct sheets and columns. Don't change the names of the columns and sheets.
+   - All the data is read from and written to this file. You can download the file from this repository. It contains a small testing dataset with fictional data - you can overwrite it with your real data. 
    - Place your Excel file in the same directory as the script (or change the filename in the script). 
-   - Adjust the column and sheet names in your Excel file to match those expected by the script (see comments in the code). If you're unsure, don't change the names of the columns and the sheets! The files in this repository already contain matching column names.
    - Content of the `dissmatch_data.xlsx` Excel file:
      - Sheet 1: Supervisors (with columns for name, workload, and area preferences)
      - Sheet 2: Students (with columns for name and area preferences)
