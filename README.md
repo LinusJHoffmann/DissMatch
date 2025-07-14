@@ -15,8 +15,8 @@ This Python script matches students to supervisors based on their preferences fo
 
 1. Data collection:
      - Establish a fixed list of research areas that your department can supervise (e.g. Constitutional Law, Competition Law, Human Rights Law, etc). Make sure the list is neither too granular, nor too coarse. 
-     - Send a form to supervisors, asking them to rank their 5 preferred supervision areas. Using Microsoft Forms is efficient here, because it can directly output an excel file.
-     - Send a form to students, asking them to rank their 3 preferred supervision areas. Using Microsoft Forms is efficient here, because it can directly output an excel file.
+     - Send a form to supervisors, asking them to rank their 5 preferred supervision areas out of all the areas on the departmental list. Using Microsoft Forms is efficient here, because it can directly output an excel file.
+     - Send a form to students, asking them to rank their 3 preferred supervision areas out of all the areas on the departmental list. Using Microsoft Forms is efficient here, because it can directly output an excel file.
  
 2. Data preparation: 
    - Collate all the data on student and supervisor preferences into the Excel file "dissmatch_data.xlsx" - make sure you insert the data in the correct sheets and columns. Don't change the names of the columns and sheets.
