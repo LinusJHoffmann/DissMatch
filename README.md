@@ -52,6 +52,7 @@ You need to install these to use DissMatch:
 - The script assumes a fixed number of area preferences for both students and supervisors - the list of research areas that supervisors and students receive must be identical. 
 
 **AI usage**
+
 This project was developed with significant help from GitHub Copilot, which provided AI-powered code suggestions and refinements throughout the process. All code has been reviewed and curated by the project author.
 
 **License**
