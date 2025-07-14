@@ -30,7 +30,7 @@ This Python script matches students to supervisors based on their preferences fo
 3. Processing: 
    - Run the code.
      - It cleans and normalises area names to ensure accurate matching.
-     - It builds a linear programming model to maximize satisfaction scores based on preferences and constraints.
+     - It builds a linear programming model to maximise satisfaction scores based on preferences and constraints.
      - It solves the assignment problem using the PuLP library = it finds all the matches that maximise the aggregate satisfaction = the highest possible choices will be matched.  
 
 4. Output:  
